@@ -1,0 +1,106 @@
+ Reading the parameter file...
+
+ Title of the simulation
+ california                                                                                          
+
+
+ 1 1 2300.d0 4300.d0 2300.0d0 0 0 10.d0 10.d0 0 0 0 0 0 0
+ 2 1 1.3d0 0300.d0  0000.d0 0 0 100.d0 100.d0 0 0 0 0 0 0
+
+ Nb of solid, fluid or porous materials =            2
+
+ Material #           1  isotropic
+ rho,cp,cs =    2300.0000000000000        4300.0000000000000        2300.0000000000000        10.000000000000000        10.000000000000000     
+ Material is solid
+
+ Material #           2  isotropic
+ rho,cp,cs =    1.3000000000000000        300.00000000000000        0.0000000000000000        100.00000000000000        100.00000000000000     
+ Material is fluid
+
+
+ Reading interface data from file DATA/interfaces.dat to count the spectral elements
+ Reading            2  points for interface            1
+ Reading            2  points for interface            2
+ Total number of layers in z direction =            1
+ There are           40  spectral elements along Z in layer            1
+
+ Total number of spectral elements along Z =           40
+
+
+ Nb of regions in the mesh =            2
+
+ Region            1
+ IX from            1  to           80
+ IZ from            1  to           40
+ Material #            1  isotropic
+ Material is solid
+ vp =    4300.0000000000000     
+ vs =    2300.0000000000000     
+ rho =    2300.0000000000000     
+ Poisson's ratio =   0.29962121212121212     
+ QKappa =    10.000000000000000     
+ Qmu =    10.000000000000000     
+  -----
+ Region            2
+ IX from           20  to           60
+ IZ from           20  to           20
+ Material #            2  isotropic
+ Material is fluid
+ vp =    300.00000000000000     
+ vs =    0.0000000000000000     
+ rho =    1.3000000000000000     
+ Poisson's ratio =   0.50000000000000000     
+ QKappa =    100.00000000000000     
+ Qmu =    100.00000000000000     
+  -----
+
+ Parameter file successfully read... 
+
+ Source           1
+ Position xs, zs =    20.000000000000000        200.00000000000000     
+ Frequency, delay =    100.00000000000000        0.0000000000000000     
+ Source type (1=force, 2=explosion):            1
+ Time function type (1=Ricker, 2=First derivative, 3=Gaussian, 4=Dirac, 5=Heaviside):            1
+ Angle of the source if force =    0.0000000000000000     
+ Mxx of the source if moment tensor =    1.0000000000000000     
+ Mzz of the source if moment tensor =    1.0000000000000000     
+ Mxz of the source if moment tensor =    0.0000000000000000     
+ Multiplying factor =    10000000000.000000     
+
+
+ The mesh contains         3200  elements
+
+ Control elements have            4  nodes
+
+ Reading interface data from file DATA/interfaces.dat
+
+ Min and max value of X in the grid =    0.0000000000000000        400.00000000000000     
+ Min and max value of Z in the grid =    0.0000000000000000        200.00000000000000     
+
+ nedges_coupled (acoustic/elastic)          84
+ nedges_coupled (acoustic/poroelastic)           0
+ nedges_coupled (poroelastic/elastic)           0
+
+ Position (x,z) of the source =    20.000000000000000        200.00000000000000     
+
+
+ writing the DATA/STATIONS file
+
+
+ There are           10  receivers
+
+ Target positions (x,z) of the           10  receivers
+
+ Receiver            1  =    20.000000000000000        200.00000000000000     
+ Receiver            2  =    60.000000000000000        200.00000000000000     
+ Receiver            3  =    100.00000000000000        200.00000000000000     
+ Receiver            4  =    140.00000000000000        200.00000000000000     
+ Receiver            5  =    180.00000000000000        200.00000000000000     
+ Receiver            6  =    220.00000000000000        200.00000000000000     
+ Receiver            7  =    260.00000000000000        200.00000000000000     
+ Receiver            8  =    300.00000000000000        200.00000000000000     
+ Receiver            9  =    340.00000000000000        200.00000000000000     
+ Receiver           10  =    380.00000000000000        200.00000000000000     
+
+ This will be a serial simulation
+

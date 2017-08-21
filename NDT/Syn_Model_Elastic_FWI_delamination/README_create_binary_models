@@ -1,0 +1,65 @@
+######################  Initial model
+1. Run simulation (simulation data files are in ./DATA)
+./run_forward.sh
+
+2. Re-compile the Fortran code if necessary
+rm -f ascii_to_binary_model_init; gfortran ascii_to_binary_model_init.f90 -o ascii_to_binary_model_init 
+
+3. Make new folder
+mkdir model_init (or mkdir model_true)
+
+4. Run script to convert data form text to binary
+./ascii_to_binary_model_init DATA/proc000000_rho_vp_vs.dat_output model_init
+
+5. View model
+python plot2d.py model_init/proc000000_x.bin model_init/proc000000_z.bin model_init/proc000000_rho.bin 'Rho'
+
+
+
+###################### True model
+2. Re-compile the Fortran code if necessary
+rm -f ascii_to_binary_model_true; gfortran ascii_to_binary_model_true.f90 -o ascii_to_binary_model_true 
+
+3. Make new folder
+mkdir model_true
+
+4. Run script to convert data form text to binary
+./ascii_to_binary_model_true DATA/proc000000_rho_vp_vs.dat_output model_true
+
+5. View model
+python plot2d.py model_true/proc000000_x.bin model_true/proc000000_z.bin model_true/proc000000_rho.bin 'Rho'
+
+###################### True model (with random disturbance)
+1. Edit (if necessary) and run matab code
+generate_model (model_true_rand_ascii is created in DATA)
+
+2. Run script to convert data form text to binary
+./ascii_to_binary_model_true DATA/model_true_rand_ascii model_true
+
+3. View model
+python plot2d.py model_true/proc000000_x.bin model_true/proc000000_z.bin model_true/proc000000_rho.bin 'Rho'
+
+
+###################### Mask model (not recommended because of abrupt change profile)
+2. Re-compile the Fortran code if necessary
+rm -f ascii_to_binary_model_mask; gfortran ascii_to_binary_model_mask.f90 -o ascii_to_binary_model_mask
+
+3. Make new folder
+mkdir model_mask
+
+4. Run script to convert data form text to binary
+./ascii_to_binary_model_mask DATA/proc000000_rho_vp_vs.dat_output model_mask
+
+5. View model
+python plot2d.py model_mask/proc000000_x.bin model_mask/proc000000_z.bin model_mask/proc000000_vp.bin 'Masked Vp'
+python plot2d.py model_mask/proc000000_x.bin model_mask/proc000000_z.bin model_mask/proc000000_vs.bin 'Masked Vs'
+
+###################### Mask model (with tapering profile)
+1. Edit (if necessary) and run matab code
+generate_mask (mask_ascii is created in DATA)
+
+2. Run script to convert data form text to binary
+./ascii_to_binary_model_true DATA/mask_ascii model_mask
+
+3. View model
+python plot2d.py model_true/proc000000_x.bin model_true/proc000000_z.bin model_mask/proc000000_rho.bin 'Rho'

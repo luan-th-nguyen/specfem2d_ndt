@@ -1,0 +1,7 @@
+# write vp
+python write_model_unformatted_fortran.py ../model_true/proc000000_x.bin ../model_true/proc000000_z.bin ../model_true/proc000000_vp.bin vp_hetero
+# write vs
+python write_model_unformatted_fortran.py ../model_true/proc000000_x.bin ../model_true/proc000000_z.bin ../model_true/proc000000_vs.bin vs_hetero
+# write rho
+python write_model_unformatted_fortran.py ../model_true/proc000000_x.bin ../model_true/proc000000_z.bin ../model_true/proc000000_rho.bin rho_hetero
+

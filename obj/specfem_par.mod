@@ -1,0 +1,2840 @@
+GFORTRAN module version '10' created from src/specfem2D/specfem2D_par.f90
+MD5:0d1923bedf9d703ed3689895d5069024 -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () ()
+() () () ())
+
+()
+
+()
+
+()
+
+()
+
+()
+
+(2 'a_plane' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 8 0 0 0 REAL ()) 0 0 () (1 0
+EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '2')) 0 () () () 0 0)
+3 'absorbbottom' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+4 'absorbing_cpml_file' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0
+0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () ()
+0 () () () 0 0)
+5 'absorbing_surface_file' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0
+0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () ()
+0 () () () 0 0)
+6 'absorbleft' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+7 'absorbright' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+8 'absorbtop' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+9 'accel_ac' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+10 'accel_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+11 'accel_elastic_adj_coupling' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+12 'accel_elastic_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+13 'accels_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+14 'accels_poroelastic_adj_coupling' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+15 'accels_poroelastic_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+16 'accelw_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+17 'accelw_poroelastic_adj_coupling' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+18 'accelw_poroelastic_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+19 'acoustic_edges' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+20 'acoustic_forcing' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+21 'acoustic_forcing_surface_file' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+CHARACTER 1 0 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0
+'512'))) 0 0 () () 0 () () () 0 0)
+22 'acoustic_simulation' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+23 'acoustic_surface' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+24 'add_bielak_conditions' 'shared_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+25 'add_bielak_conditions_bottom' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+26 'add_bielak_conditions_left' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+27 'add_bielak_conditions_right' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+28 'add_bielak_conditions_top' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+29 'add_periodic_conditions' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+30 'adj_sourcearrays' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (5 0 DEFERRED () () () () () () () () () ()) 0 () ()
+() 0 0)
+31 'all_anisotropic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+32 'alpha_ac_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+33 'alpha_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+34 'alpha_x_store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+35 'alpha_z_store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+36 'alphaval' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+37 'already_shifted_velocity' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+38 'anglerec' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+39 'anglerec_irec' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+40 'anglesource' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+41 'anglesource_recv' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+42 'anglesource_refl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+43 'aniso10' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+44 'aniso11' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+45 'aniso12' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+46 'aniso3' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+47 'aniso4' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+48 'aniso5' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+49 'aniso6' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+50 'aniso7' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+51 'aniso8' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+52 'aniso9' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+53 'anisotropy' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+54 'any_abs' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+55 'any_acoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+56 'any_acoustic_edges' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+57 'any_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+58 'any_fluid_poro_edges' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+59 'any_fluid_solid_edges' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+60 'any_gravitoacoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+61 'any_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+62 'any_solid_poro_edges' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+63 'any_tangential_curve' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+64 'anyabs' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () ()
+() 0 0)
+65 'anyabs_glob' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+66 'assign_external_model' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+67 'attenuation_poro_fluid_part' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+68 'attenuation_viscoacoustic' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+69 'attenuation_viscoelastic' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+70 'axial_elements_file' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0
+0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () ()
+0 () () () 0 0)
+71 'axisym' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+72 'b_absorb_acoustic_bottom' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ())
+0 () () () 0 0)
+73 'b_absorb_acoustic_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+74 'b_absorb_acoustic_right' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ())
+0 () () () 0 0)
+75 'b_absorb_acoustic_top' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+76 'b_absorb_elastic_bottom' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () ()
+() ()) 0 () () () 0 0)
+77 'b_absorb_elastic_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+78 'b_absorb_elastic_right' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+79 'b_absorb_elastic_top' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+80 'b_absorb_poro_s_bottom' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+81 'b_absorb_poro_s_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+82 'b_absorb_poro_s_right' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+83 'b_absorb_poro_s_top' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+84 'b_absorb_poro_w_bottom' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+85 'b_absorb_poro_w_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+86 'b_absorb_poro_w_right' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+87 'b_absorb_poro_w_top' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+88 'b_accel_ac' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+89 'b_accel_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+90 'b_accels_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+91 'b_accelw_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+92 'b_deltat' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+93 'b_deltatover2' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+94 'b_deltatsquareover2' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+95 'b_displ_ac' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+96 'b_displ_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+97 'b_displ_elastic_old' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+98 'b_displs_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+99 'b_displw_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+100 'b_e1' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0 0)
+101 'b_e11' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0 0)
+102 'b_e13' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0 0)
+103 'b_epsilondev_s' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+104 'b_epsilondev_w' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+105 'b_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+106 'b_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+107 'b_plane' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 8 0 0 0 REAL ()) 0 0 () (1 0
+EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '2')) 0 () () () 0 0)
+108 'b_potential_acoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+109 'b_potential_acoustic_old' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+110 'b_potential_dot_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+111 'b_potential_dot_dot_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+112 'b_veloc_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+113 'b_velocs_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+114 'b_velocw_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+115 'b_viscodampx' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+116 'b_viscodampz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+117 'beta_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+118 'betaval' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+119 'bot_bound' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+120 'boundvect' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+121 'broadcast_same_mesh_and_model' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+122 'buffer_recv_faces_vector_ac' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+123 'buffer_recv_faces_vector_el' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+124 'buffer_recv_faces_vector_pos' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+125 'buffer_recv_faces_vector_pow' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+126 'buffer_send_faces_vector_ac' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+127 'buffer_send_faces_vector_el' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+128 'buffer_send_faces_vector_pos' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+129 'buffer_send_faces_vector_pow' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+130 'bulk_beta_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+131 'bulk_c_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+132 'burst_band_width' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+133 'c11_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+134 'c11_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+135 'c11ext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+136 'c11store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+137 'c12ext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+138 'c12store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+139 'c13_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+140 'c13_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+141 'c13ext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+142 'c13store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+143 'c15_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+144 'c15_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+145 'c15ext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+146 'c15store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+147 'c22ext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+148 'c23ext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+149 'c23store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+150 'c25ext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+151 'c25store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+152 'c33_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+153 'c33_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+154 'c33ext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+155 'c33store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+156 'c35_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+157 'c35_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+158 'c35ext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+159 'c35store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+160 'c55_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+161 'c55_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+162 'c55ext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+163 'c55store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+164 'c_inc' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+165 'c_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+166 'c_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+167 'c_plane' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 8 0 0 0 REAL ()) 0 0 () (1 0
+EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '2')) 0 () () () 0 0)
+168 'c_refl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+169 'codeabs' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+170 'codeabs_corner' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+171 'codeacforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+172 'comp_g' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+173 'compute_integrated_energy_field' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+174 'constant_max_amplitude_to_use' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8
+0 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+175 'constants' 'constants' '' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN 0 0) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0
+0)
+176 'coord' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+177 'coorg' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+178 'copy_ibool_ori' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+179 'cosrot_irec' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+180 'count_bottom' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () ()
+0 () () () 0 0)
+181 'count_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () ()
+0 () () () 0 0)
+182 'count_right' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () ()
+0 () () () 0 0)
+183 'coupled_acoustic_elastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+184 'coupled_acoustic_poro' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+185 'coupled_elastic_poro' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+186 'cp' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+187 'cpi_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+188 'cpii_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+189 'cs' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+190 'cs_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+191 'custom_real' 'constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '4') () 0 () () () 0 0)
+192 'cutsnaps' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+193 'd_x_store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+194 'd_z_store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+195 'deltat' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+196 'deltatover2' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+197 'deltatsquareover2' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+198 'density' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+199 'dershape2d' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+200 'displ_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+201 'displ_elastic_initial_rk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+202 'displ_elastic_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+203 'displ_elastic_old' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+204 'displs_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+205 'displs_poroelastic_initial_rk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+206 'displs_poroelastic_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+207 'displs_poroelastic_old' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+208 'displw_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+209 'displw_poroelastic_initial_rk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+210 'displw_poroelastic_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+211 'dist_current' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+212 'dist_tangential_detection_curve' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 8 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+213 'distmin' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+214 'draw_sources_and_receivers' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+215 'draw_water_in_blue' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+216 'dt' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+217 'e1' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0 0)
+218 'e11' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0 0)
+219 'e11_force_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (5 0 DEFERRED () () () () () () () () () ()) 0 () ()
+() 0 0)
+220 'e11_initial_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+221 'e11_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+222 'e13' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0 0)
+223 'e13_force_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (5 0 DEFERRED () () () () () () () () () ()) 0 () ()
+() 0 0)
+224 'e13_initial_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+225 'e13_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+226 'e1_force_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (5 0 DEFERRED () () () () () () () () () ()) 0 () ()
+() 0 0)
+227 'e1_initial_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+228 'e1_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0 0)
+229 'elastic_simulation' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+230 'epsilondev_s' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+231 'epsilondev_w' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+232 'eta_f_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+233 'eta_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+234 'eta_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+235 'f0_attenuation' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0
+REAL ()) 0 0 () () 0 () () () 0 0)
+236 'f0_source' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+237 'factor' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+238 'factor_subsample_image' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0
+REAL ()) 0 0 () () 0 () () () 0 0)
+239 'flagrange_glj' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+240 'fluid_poro_acoustic_iedge' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+241 'fluid_poro_acoustic_ispec' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+242 'fluid_poro_poroelastic_iedge' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+243 'fluid_poro_poroelastic_ispec' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+244 'fluid_solid_acoustic_iedge' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+245 'fluid_solid_acoustic_ispec' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+246 'fluid_solid_elastic_iedge' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+247 'fluid_solid_elastic_ispec' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+248 'force_normal_to_surface' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+249 'free_surface_file' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0
+0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () ()
+0 () () () 0 0)
+250 'freq0' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+251 'gamma_receiver' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+252 'gamma_source' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+253 'gammar_store_loc' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+254 'gammarec' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+255 'gammaval' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+256 'gammax' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+257 'gammaz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+258 'gpu_mode' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+259 'gravitoacoustic_simulation' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+260 'gravityext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+261 'hgammar' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+262 'hgammas' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+263 'hgammas_store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+264 'hpgammar' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+265 'hpgammas' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+266 'hprime_xx' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (2 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') (CONSTANT (INTEGER 4 0 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () ()
+() 0 0)
+267 'hprime_zz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (2 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') (CONSTANT (INTEGER 4 0 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () ()
+() 0 0)
+268 'hprimebar_xx' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (2 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') (CONSTANT (INTEGER 4 0 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () ()
+() 0 0)
+269 'hprimebarwglj_xx' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (2 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') (CONSTANT (INTEGER 4 0 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () ()
+() 0 0)
+270 'hprimewgll_xx' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (2 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') (CONSTANT (INTEGER 4 0 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () ()
+() 0 0)
+271 'hprimewgll_zz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (2 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') (CONSTANT (INTEGER 4 0 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () ()
+() 0 0)
+272 'hpxir' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+273 'hpxis' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+274 'hxir' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+275 'hxis' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+276 'hxis_store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+277 'i_begin' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 ()
+(1 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '4')) 0 () () () 0 0)
+278 'i_end' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 ()
+(1 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '4')) 0 () () () 0 0)
+279 'i_stage' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+280 'ib_bottom' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+281 'ib_bottom_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+282 'ib_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+283 'ib_left_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+284 'ib_right' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+285 'ib_right_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+286 'ib_top' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+287 'ib_top_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+288 'ibegin_edge1' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+289 'ibegin_edge1_acforcing' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+290 'ibegin_edge1_poro' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+291 'ibegin_edge2' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+292 'ibegin_edge2_acforcing' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+293 'ibegin_edge2_poro' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+294 'ibegin_edge3' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+295 'ibegin_edge3_acforcing' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+296 'ibegin_edge3_poro' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+297 'ibegin_edge4' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+298 'ibegin_edge4_acforcing' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+299 'ibegin_edge4_poro' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+300 'ibool' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+301 'ibool_interfaces_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ())
+0 () () () 0 0)
+302 'ibool_interfaces_elastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ())
+0 () () () 0 0)
+303 'ibool_interfaces_ext_mesh' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ())
+0 () () () 0 0)
+304 'ibool_interfaces_ext_mesh_init' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ())
+0 () () () 0 0)
+305 'ibool_interfaces_poroelastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ())
+0 () () () 0 0)
+306 'icodemat' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+307 'iend_edge1' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+308 'iend_edge1_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+309 'iend_edge1_poro' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+310 'iend_edge2' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+311 'iend_edge2_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+312 'iend_edge2_poro' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+313 'iend_edge3' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+314 'iend_edge3_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+315 'iend_edge3_poro' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+316 'iend_edge4' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+317 'iend_edge4_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+318 'iend_edge4_poro' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+319 'iglob_is_forced' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+320 'iglob_source' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+321 'iglobzero' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+322 'imagetype_jpeg' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+323 'imagetype_postscript' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+324 'imagetype_wavefield_dumps' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+325 'initialfield' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+326 'integer_mask_ibool' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+327 'integrated_kinetic_energy_field' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+328 'integrated_potential_energy_field' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+329 'interfacesfile' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0
+0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () ()
+0 () () () 0 0)
+330 'interpol' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+331 'inum_interfaces_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+332 'inum_interfaces_elastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+333 'inum_interfaces_poroelastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+334 'inv_tau_sigma_nu1' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+335 'inv_tau_sigma_nu2' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+336 'is_on_the_axis' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+337 'islice_selected_rec' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+338 'islice_selected_source' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+339 'ispec_is_acoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+340 'ispec_is_anisotropic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+341 'ispec_is_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+342 'ispec_is_gravitoacoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+343 'ispec_is_inner' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+344 'ispec_is_pml' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+345 'ispec_is_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+346 'ispec_of_axial_elements' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+347 'ispec_selected_rec' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+348 'ispec_selected_rec_loc' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+349 'ispec_selected_source' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+350 'it' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+351 'it_of_this_subset' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+352 'it_subset_end' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+353 'iteration_on_subset' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+354 'ivalue' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 ()
+(2 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '5') (CONSTANT (INTEGER 4 0 0 0 INTEGER ())
+0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '4')) 0 () () () 0 0)
+355 'ivalue_inverse' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (2 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ())
+0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') (CONSTANT (INTEGER
+4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '4'))
+0 () () () 0 0)
+356 'j_begin' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 ()
+(1 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '4')) 0 () () () 0 0)
+357 'j_end' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 ()
+(1 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '4')) 0 () () () 0 0)
+358 'jacobian' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+359 'jvalue' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 ()
+(2 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '5') (CONSTANT (INTEGER 4 0 0 0 INTEGER ())
+0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '4')) 0 () () () 0 0)
+360 'jvalue_inverse' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (2 0 EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ())
+0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') (CONSTANT (INTEGER
+4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '4'))
+0 () () () 0 0)
+361 'k_x_store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+362 'k_z_store' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+363 'kappa_ac_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+364 'kappa_f_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+365 'kappa_fr_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+366 'kappa_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+367 'kappa_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+368 'kappa_s_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+369 'kappal_ac_global' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+370 'kappastore' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+371 'kinetic_effective_duration_field' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+372 'kinetic_energy' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+373 'kmato' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+374 'knods' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+375 'left_bound' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+376 'm_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+377 'm_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+378 'mask_ibool_pml' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+379 'materials_file' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0
+0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () ()
+0 () () () 0 0)
+380 'max_ibool_interfaces_size_ac' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+381 'max_ibool_interfaces_size_el' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+382 'max_ibool_interfaces_size_po' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+383 'max_interface_size' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+384 'max_kinetic_energy_field' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+385 'max_length_network_name' 'constants' '' 1 ((PARAMETER
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '8') () 0 ()
+() () 0 0)
+386 'max_length_station_name' 'constants' '' 1 ((PARAMETER
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '32') () 0 ()
+() () 0 0)
+387 'max_nibool_interfaces_ext_mesh' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+388 'max_npoints_interface' 'shared_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+389 'max_potential_energy_field' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+390 'max_string_len' 'constants' '' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512') () 0 () () () 0 0)
+391 'max_total_energy_field' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+392 'mesh_file' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0 0 CHARACTER ((
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () () 0 () () () 0
+0)
+393 'meshvect' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+394 'model' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0 0 CHARACTER ((
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () () 0 () () () 0
+0)
+395 'modelvect' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+396 'mu_fr_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+397 'mu_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+398 'mu_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+399 'mu_nu1' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+400 'mu_nu2' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+401 'mufr_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+402 'mufr_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+403 'mufrb_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+404 'mustore' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+405 'mxx' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+406 'mxz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+407 'my_interfaces' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+408 'my_neighbours' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+409 'my_nelmnts_neighbours' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+410 'myrank' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+411 'mzz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+412 'n1_tangential_detection_curve' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+413 'n_sls' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+414 'n_tangential_detection_curve' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (
+INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 EXPLICIT (CONSTANT (INTEGER 4 0
+0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '4')) 0
+() () () 0 0)
+415 'nadj_rec_local' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+416 'name_of_source_file' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (
+CHARACTER 1 0 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0
+'512'))) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+417 'nbmodels' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+418 'nbregions' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+419 'ndim' 'constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '2') () 0 () () () 0 0)
+420 'nedges' 'constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '4') () 0 () () () 0 0)
+421 'nelem_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+422 'nelem_acoustic_surface' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+423 'nelem_on_the_axis' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+424 'nelem_pml_thickness' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+425 'nelemabs' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+426 'nelmnts' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+427 'network_name' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (
+CHARACTER 1 0 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '8')))
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+428 'nglj' 'constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') () 0 () () () 0 0)
+429 'ngllx' 'constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') () 0 () () () 0 0)
+430 'ngllz' 'constants' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '5') () 0 () () () 0 0)
+431 'nglob' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+432 'nglob_acoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+433 'nglob_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+434 'nglob_gravitoacoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+435 'nglob_interface' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+436 'nglob_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+437 'ngnod' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+438 'nibool_interfaces_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+439 'nibool_interfaces_elastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+440 'nibool_interfaces_ext_mesh' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+441 'nibool_interfaces_poroelastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+442 'ninterface' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+443 'ninterface_acoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+444 'ninterface_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+445 'ninterface_poroelastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+446 'nnodes_tangential_curve' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+447 'nodes_coords_file' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0
+0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () ()
+0 () () () 0 0)
+448 'nodes_tangential_curve' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 8 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+449 'noise_tomography' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+450 'npgeo' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+451 'nproc' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+452 'nproc_read_from_database' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+453 'nrec' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+454 'nrec_line' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+455 'nreceiversets' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+456 'nrecloc' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+457 'nsources' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+458 'nspec' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+459 'nspec_acoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+460 'nspec_acoustic_b' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+461 'nspec_att' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+462 'nspec_bottom' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+463 'nspec_bottom_acforcing' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+464 'nspec_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+465 'nspec_elastic_b' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+466 'nspec_gravitoacoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+467 'nspec_inner' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+468 'nspec_inner_acoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+469 'nspec_inner_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+470 'nspec_inner_poroelastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+471 'nspec_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+472 'nspec_left_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+473 'nspec_outer' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+474 'nspec_outer_acoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+475 'nspec_outer_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+476 'nspec_outer_poroelastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+477 'nspec_pml' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+478 'nspec_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+479 'nspec_poroelastic_b' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+480 'nspec_right' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+481 'nspec_right_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+482 'nspec_top' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+483 'nspec_top_acforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+484 'nsqext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+485 'nstep' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+486 'nstep_between_output_images' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+487 'nstep_between_output_info' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+488 'nsubset_iterations' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+489 'nt_dump_attenuation' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+490 'ntstep_between_output_energy' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+491 'num_fluid_poro_edges' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+492 'num_fluid_solid_edges' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+493 'num_material' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+494 'num_phase_ispec_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+495 'num_phase_ispec_elastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+496 'num_phase_ispec_poroelastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+497 'num_solid_poro_edges' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+498 'numabs' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+499 'numacforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+500 'numat' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+501 'number_of_interfaces' 'shared_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+502 'number_of_layers' 'shared_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+503 'number_of_simultaneous_runs' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+504 'nx' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+505 'nx_param' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+506 'nxread' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+507 'nz' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () ()
+() 0 0)
+508 'nz_layer' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+509 'nzread' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+510 'output_color_image' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+511 'output_energy' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+512 'output_grid_ascii' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+513 'output_grid_gnuplot' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+514 'output_postscript_snapshot' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+515 'output_wavefield_dumps' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+516 'over_critical_angle' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+517 'p_sv' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+518 'partitioning_method' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+519 'periodic_horiz_dist' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0
+REAL ()) 0 0 () () 0 () () () 0 0)
+520 'permeability' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+521 'permxx_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+522 'permxz_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+523 'permzz_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+524 'phase_ispec_inner_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ())
+0 () () () 0 0)
+525 'phase_ispec_inner_elastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ())
+0 () () () 0 0)
+526 'phase_ispec_inner_poroelastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (2 0 DEFERRED () () () ())
+0 () () () 0 0)
+527 'phi_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+528 'phi_nu1' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0 0)
+529 'phi_nu2' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0 0)
+530 'phi_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+531 'phib_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+532 'plot_lowerleft_corner_only' 'shared_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+533 'pml_boundary_conditions' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+534 'pml_interface_history_accel' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ())
+0 () () () 0 0)
+535 'pml_interface_history_displ' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ())
+0 () () () 0 0)
+536 'pml_interface_history_potential' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+537 'pml_interface_history_potential_dot' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+538 'pml_interface_history_potential_dot_dot' 'specfem_par' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0
+ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () ()
+() ()) 0 () () () 0 0)
+539 'pml_interface_history_veloc' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ())
+0 () () () 0 0)
+540 'pml_interior_interface' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () (2 0 DEFERRED () () () ())
+0 () () () 0 0)
+541 'point_interface' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+542 'pointsdisp' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+543 'poroelastcoef' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+544 'poroelastic_simulation' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+545 'porosity' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+546 'potential_acoustic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+547 'potential_acoustic_adj_coupling' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+548 'potential_acoustic_init_rk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+549 'potential_acoustic_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+550 'potential_acoustic_old' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+551 'potential_dot_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+552 'potential_dot_acoustic_init_rk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+553 'potential_dot_acoustic_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+554 'potential_dot_acoustic_rk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+555 'potential_dot_acoustic_temp' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+556 'potential_dot_dot_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+557 'potential_dot_dot_acoustic_rk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+558 'potential_dot_dot_gravito' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+559 'potential_dot_dot_gravitoacoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+560 'potential_dot_gravito' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+561 'potential_dot_gravitoacoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+562 'potential_effective_duration_field' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+563 'potential_energy' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+564 'potential_gravito' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+565 'potential_gravitoacoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+566 'power_display_color' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0
+REAL ()) 0 0 () () 0 () () () 0 0)
+567 'q0' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+568 'qkappa' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+569 'qkappa_attenuation' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+570 'qkappa_attenuationext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+571 'qmu' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+572 'qmu_attenuation' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+573 'qmu_attenuationext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+574 'ratio_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+575 'read_external_mesh' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+576 'read_velocities_at_f0' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+577 'rec_normal_to_surface' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+578 'rec_tangential_detection_curve' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+579 'recloc' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+580 'record_at_surface_same_vertical' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0
+ALLOCATABLE DIMENSION) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED
+() ()) 0 () () () 0 0)
+581 'region_cpml' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+582 'request_send_recv_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+583 'request_send_recv_elastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+584 'request_send_recv_poro' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+585 'rho_ac_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+586 'rho_f_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+587 'rho_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+588 'rho_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+589 'rho_local' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+590 'rho_s_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+591 'rho_vp' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+592 'rho_vs' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+593 'rhob_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+594 'rhobb_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+595 'rhoext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+596 'rhof_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+597 'rhof_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+598 'rhofb_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+599 'rhofbb_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+600 'rhol_ac_global' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+601 'rhop_ac_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+602 'rhop_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+603 'rhorho_ac_hessian_final1' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ())
+0 () () () 0 0)
+604 'rhorho_ac_hessian_final2' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ())
+0 () () () 0 0)
+605 'rhorho_el_hessian_final1' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ())
+0 () () () 0 0)
+606 'rhorho_el_hessian_final2' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ())
+0 () () () 0 0)
+607 'rhostore' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+608 'rhot_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+609 'rhot_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+610 'right_bound' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+611 'rmass_inverse_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+612 'rmass_inverse_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+613 'rmass_inverse_gravito' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+614 'rmass_inverse_gravitoacoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+615 'rmass_s_inverse_poroelastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+616 'rmass_w_inverse_poroelastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+617 'rmemory_acoustic_dux_dx' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () ()
+() ()) 0 () () () 0 0)
+618 'rmemory_acoustic_dux_dx_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () ()
+() ()) 0 () () () 0 0)
+619 'rmemory_acoustic_dux_dz' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () ()
+() ()) 0 () () () 0 0)
+620 'rmemory_acoustic_dux_dz_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () ()
+() ()) 0 () () () 0 0)
+621 'rmemory_displ_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (5 0 DEFERRED () () () () () () () () () ()) 0 () ()
+() 0 0)
+622 'rmemory_displ_elastic_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (5 0 DEFERRED () () () () () ()
+() () () ()) 0 () () () 0 0)
+623 'rmemory_dux_dx' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+624 'rmemory_dux_dx_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+625 'rmemory_dux_dx_prime' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+626 'rmemory_dux_dz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+627 'rmemory_dux_dz_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+628 'rmemory_dux_dz_prime' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+629 'rmemory_duz_dx' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+630 'rmemory_duz_dx_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+631 'rmemory_duz_dx_prime' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+632 'rmemory_duz_dz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+633 'rmemory_duz_dz_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+634 'rmemory_duz_dz_prime' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+635 'rmemory_fsb_displ_elastic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (5 0 DEFERRED () () () () () ()
+() () () ()) 0 () () () 0 0)
+636 'rmemory_fsb_displ_elastic_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (5 0 DEFERRED () () () () () ()
+() () () ()) 0 () () () 0 0)
+637 'rmemory_potential_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () ()
+() ()) 0 () () () 0 0)
+638 'rmemory_potential_acoustic_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () ()
+() ()) 0 () () () 0 0)
+639 'rmemory_sfb_potential_ddot_acoustic' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () ()
+() ()) 0 () () () 0 0)
+640 'rmemory_sfb_potential_ddot_acoustic_lddrk' 'specfem_par' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0
+ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (4 0 DEFERRED () ()
+() () () () () ()) 0 () () () 0 0)
+641 'rotate_pml_activate' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+642 'rotate_pml_angle' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0
+REAL ()) 0 0 () () 0 () () () 0 0)
+643 'rx_viscous' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+644 'rx_viscous_force_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+645 'rx_viscous_initial_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+646 'rx_viscous_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+647 'rz_viscous' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+648 'rz_viscous_force_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+649 'rz_viscous_initial_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+650 'rz_viscous_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+651 'save_ascii_kernels' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+652 'save_ascii_seismograms' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+653 'save_binary_seismograms_double' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+654 'save_binary_seismograms_single' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+655 'save_forward' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+656 'save_model' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0
+0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () ()
+0 () () () 0 0)
+657 'seismo_current' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+658 'seismo_offset' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+659 'seismotype' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+660 'setup_with_binary_database' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+661 'shape2d' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+662 'shared_input_parameters' 'shared_input_parameters' '' 1 ((MODULE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN 0 0) (UNKNOWN 0 0 0 0
+UNKNOWN ()) 0 0 () () 0 () () () 0 0)
+663 'shared_parameters' 'shared_parameters' '' 1 ((MODULE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN 0 0) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () ()
+0 () () () 0 0)
+664 'simulation_type' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+665 'sinrot_irec' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+666 'siscurl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+667 'sisux' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+668 'sisuz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+669 'sizemax_arrows' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0
+REAL ()) 0 0 () () 0 () () () 0 0)
+670 'sm_k' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+671 'sm_kl' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+672 'solid_poro_elastic_iedge' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+673 'solid_poro_elastic_ispec' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+674 'solid_poro_poroelastic_iedge' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+675 'solid_poro_poroelastic_ispec' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+676 'source_adjoint' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+677 'source_courbe_eros' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+678 'source_time_function' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+679 'source_type' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+680 'sourcearrays' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (4 0 DEFERRED () () () () () () () ()) 0 () () () 0
+0)
+681 'spec_to_pml' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+682 'specfem_par' 'specfem_par' '' 1 ((MODULE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN 0 0) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () ()
+0 () () () 0 0)
+683 'st_xval' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+684 'st_zval' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+685 'stacey_absorbing_conditions' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+686 'stage_time_scheme' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+687 'station_name' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (
+CHARACTER 1 0 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '32')))
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+688 'su_format' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+689 'subsamp_postscript' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+690 'subsamp_seismos' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+691 't0' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+692 't0x_bot' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+693 't0x_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+694 't0x_right' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+695 't0z_bot' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+696 't0z_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+697 't0z_right' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+698 'tangential_detection_curve_file' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+CHARACTER 1 0 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0
+'512'))) 0 0 () () 0 () () () 0 0)
+699 'theta_e' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+700 'theta_s' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+701 'thetainv' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+702 'this_ibool_is_a_periodic_edge' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () (1 0 DEFERRED () ()) 0 ()
+() () 0 0)
+703 'time_function_type' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+704 'time_offset' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+705 'time_stepping_scheme' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () () 0 () () () 0 0)
+706 'timestamp_seconds_start' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0
+REAL ()) 0 0 () () 0 () () () 0 0)
+707 'timeval' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+708 'title' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0 0 CHARACTER ((
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () () 0 () () () 0
+0)
+709 'tomo_material' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (INTEGER 4 0 0 0 INTEGER ()) 0 0
+() () 0 () () () 0 0)
+710 'tomography_file' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (CHARACTER 1 0 0
+0 CHARACTER ((CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '512'))) 0 0 () ()
+0 () () () 0 0)
+711 'tortuosity' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+712 'tortuosity_read' 'shared_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+713 'total_effective_duration_field' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+714 'total_integrated_energy_field' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () ()
+0 0)
+715 'tshift_src' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+716 'typeabs' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4 0 0 0
+INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+717 'typeacforcing' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (INTEGER 4
+0 0 0 INTEGER ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+718 'undo_attenuation' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+719 'us_letter' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0 LOGICAL ()) 0 0
+() () 0 () () () 0 0)
+720 'use_binary_for_wavefield_dumps' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+721 'use_constant_max_amplitude' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+722 'use_existing_stations' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (LOGICAL 4 0 0 0
+LOGICAL ()) 0 0 () () 0 () () () 0 0)
+723 'use_snapshot_number_in_filename' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+724 'use_trick_for_better_pressure' 'shared_input_parameters' '' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (
+LOGICAL 4 0 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+725 'user_t0' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () ()
+0 () () () 0 0)
+726 'v0x_bot' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+727 'v0x_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+728 'v0x_right' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+729 'v0z_bot' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+730 'v0z_left' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+731 'v0z_right' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+732 'veloc_elastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+733 'veloc_elastic_initial_rk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+734 'veloc_elastic_lddrk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+735 'veloc_elastic_lddrk_temp' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+736 'veloc_elastic_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+737 'velocs_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+738 'velocs_poroelastic_initial_rk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+739 'velocs_poroelastic_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+740 'velocs_poroelastic_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+741 'velocw_poroelastic' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+742 'velocw_poroelastic_initial_rk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+743 'velocw_poroelastic_lddrk' 'specfem_par' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE
+DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 ()
+() () 0 0)
+744 'velocw_poroelastic_rk' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+745 'viscox' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+746 'viscoz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+747 'vp_local' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+748 'vpext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+749 'vs_local' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+750 'vsext' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+751 'which_pml_elem' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (LOGICAL 4
+0 0 0 LOGICAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+752 'wxglj' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0
+EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () () () 0 0)
+753 'wxgll' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0
+EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () () () 0 0)
+754 'wzgll' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 4 0 0 0 REAL ()) 0 0 () (1 0
+EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () () () 0 0)
+755 'x_final_receiver' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+756 'x_source' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+757 'xdeb' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+758 'xfin' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+759 'xi_receiver' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+760 'xi_source' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+761 'xiglj' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 8 0 0 0 REAL ()) 0 0 () (1 0
+EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () () () 0 0)
+762 'xigll' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 8 0 0 0 REAL ()) 0 0 () (1 0
+EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () () () 0 0)
+763 'xir_store_loc' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0
+0 0 REAL ()) 0 0 () (2 0 DEFERRED () () () ()) 0 () () () 0 0)
+764 'xirec' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () () 0 () () () 0
+0)
+765 'xix' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+766 'xiz' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 4 0 0 0 REAL ())
+0 0 () (3 0 DEFERRED () () () () () ()) 0 () () () 0 0)
+767 'xmax_param' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0
+REAL ()) 0 0 () () 0 () () () 0 0)
+768 'xmin_param' 'shared_input_parameters' '' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0) (REAL 8 0 0 0
+REAL ()) 0 0 () () 0 () () () 0 0)
+769 'z_final_receiver' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+770 'z_source' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0 0 0 REAL ())
+0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+771 'zdeb' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+772 'zfin' 'shared_input_parameters' '' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE 0 0 ALLOCATABLE DIMENSION) (REAL 8 0
+0 0 REAL ()) 0 0 () (1 0 DEFERRED () ()) 0 () () () 0 0)
+773 'zigll' 'specfem_par' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0 DIMENSION) (REAL 8 0 0 0 REAL ()) 0 0 () (1 0
+EXPLICIT (CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '5')) 0 () () () 0 0)
+)
+
+('a_plane' 0 2 'absorbbottom' 0 3 'absorbing_cpml_file' 0 4
+'absorbing_surface_file' 0 5 'absorbleft' 0 6 'absorbright' 0 7
+'absorbtop' 0 8 'accel_ac' 0 9 'accel_elastic' 0 10
+'accel_elastic_adj_coupling' 0 11 'accel_elastic_rk' 0 12
+'accels_poroelastic' 0 13 'accels_poroelastic_adj_coupling' 0 14
+'accels_poroelastic_rk' 0 15 'accelw_poroelastic' 0 16
+'accelw_poroelastic_adj_coupling' 0 17 'accelw_poroelastic_rk' 0 18
+'acoustic_edges' 0 19 'acoustic_forcing' 0 20
+'acoustic_forcing_surface_file' 0 21 'acoustic_simulation' 0 22
+'acoustic_surface' 0 23 'add_bielak_conditions' 0 24
+'add_bielak_conditions_bottom' 0 25 'add_bielak_conditions_left' 0 26
+'add_bielak_conditions_right' 0 27 'add_bielak_conditions_top' 0 28
+'add_periodic_conditions' 0 29 'adj_sourcearrays' 0 30 'all_anisotropic'
+0 31 'alpha_ac_kl' 0 32 'alpha_kl' 0 33 'alpha_x_store' 0 34
+'alpha_z_store' 0 35 'alphaval' 0 36 'already_shifted_velocity' 0 37
+'anglerec' 0 38 'anglerec_irec' 0 39 'anglesource' 0 40 'anglesource_recv'
+0 41 'anglesource_refl' 0 42 'aniso10' 0 43 'aniso11' 0 44 'aniso12' 0
+45 'aniso3' 0 46 'aniso4' 0 47 'aniso5' 0 48 'aniso6' 0 49 'aniso7' 0 50
+'aniso8' 0 51 'aniso9' 0 52 'anisotropy' 0 53 'any_abs' 0 54
+'any_acoustic' 0 55 'any_acoustic_edges' 0 56 'any_elastic' 0 57
+'any_fluid_poro_edges' 0 58 'any_fluid_solid_edges' 0 59
+'any_gravitoacoustic' 0 60 'any_poroelastic' 0 61 'any_solid_poro_edges'
+0 62 'any_tangential_curve' 0 63 'anyabs' 0 64 'anyabs_glob' 0 65
+'assign_external_model' 0 66 'attenuation_poro_fluid_part' 0 67
+'attenuation_viscoacoustic' 0 68 'attenuation_viscoelastic' 0 69
+'axial_elements_file' 0 70 'axisym' 0 71 'b_absorb_acoustic_bottom' 0 72
+'b_absorb_acoustic_left' 0 73 'b_absorb_acoustic_right' 0 74
+'b_absorb_acoustic_top' 0 75 'b_absorb_elastic_bottom' 0 76
+'b_absorb_elastic_left' 0 77 'b_absorb_elastic_right' 0 78
+'b_absorb_elastic_top' 0 79 'b_absorb_poro_s_bottom' 0 80
+'b_absorb_poro_s_left' 0 81 'b_absorb_poro_s_right' 0 82
+'b_absorb_poro_s_top' 0 83 'b_absorb_poro_w_bottom' 0 84
+'b_absorb_poro_w_left' 0 85 'b_absorb_poro_w_right' 0 86
+'b_absorb_poro_w_top' 0 87 'b_accel_ac' 0 88 'b_accel_elastic' 0 89
+'b_accels_poroelastic' 0 90 'b_accelw_poroelastic' 0 91 'b_deltat' 0 92
+'b_deltatover2' 0 93 'b_deltatsquareover2' 0 94 'b_displ_ac' 0 95
+'b_displ_elastic' 0 96 'b_displ_elastic_old' 0 97 'b_displs_poroelastic'
+0 98 'b_displw_poroelastic' 0 99 'b_e1' 0 100 'b_e11' 0 101 'b_e13' 0
+102 'b_epsilondev_s' 0 103 'b_epsilondev_w' 0 104 'b_k' 0 105 'b_kl' 0
+106 'b_plane' 0 107 'b_potential_acoustic' 0 108
+'b_potential_acoustic_old' 0 109 'b_potential_dot_acoustic' 0 110
+'b_potential_dot_dot_acoustic' 0 111 'b_veloc_elastic' 0 112
+'b_velocs_poroelastic' 0 113 'b_velocw_poroelastic' 0 114 'b_viscodampx'
+0 115 'b_viscodampz' 0 116 'beta_kl' 0 117 'betaval' 0 118 'bot_bound' 0
+119 'boundvect' 0 120 'broadcast_same_mesh_and_model' 0 121
+'buffer_recv_faces_vector_ac' 0 122 'buffer_recv_faces_vector_el' 0 123
+'buffer_recv_faces_vector_pos' 0 124 'buffer_recv_faces_vector_pow' 0
+125 'buffer_send_faces_vector_ac' 0 126 'buffer_send_faces_vector_el' 0
+127 'buffer_send_faces_vector_pos' 0 128 'buffer_send_faces_vector_pow'
+0 129 'bulk_beta_kl' 0 130 'bulk_c_kl' 0 131 'burst_band_width' 0 132
+'c11_k' 0 133 'c11_kl' 0 134 'c11ext' 0 135 'c11store' 0 136 'c12ext' 0
+137 'c12store' 0 138 'c13_k' 0 139 'c13_kl' 0 140 'c13ext' 0 141
+'c13store' 0 142 'c15_k' 0 143 'c15_kl' 0 144 'c15ext' 0 145 'c15store'
+0 146 'c22ext' 0 147 'c23ext' 0 148 'c23store' 0 149 'c25ext' 0 150
+'c25store' 0 151 'c33_k' 0 152 'c33_kl' 0 153 'c33ext' 0 154 'c33store'
+0 155 'c35_k' 0 156 'c35_kl' 0 157 'c35ext' 0 158 'c35store' 0 159 'c55_k'
+0 160 'c55_kl' 0 161 'c55ext' 0 162 'c55store' 0 163 'c_inc' 0 164 'c_k'
+0 165 'c_kl' 0 166 'c_plane' 0 167 'c_refl' 0 168 'codeabs' 0 169
+'codeabs_corner' 0 170 'codeacforcing' 0 171 'comp_g' 0 172
+'compute_integrated_energy_field' 0 173 'constant_max_amplitude_to_use'
+0 174 'constants' 0 175 'coord' 0 176 'coorg' 0 177 'copy_ibool_ori' 0
+178 'cosrot_irec' 0 179 'count_bottom' 0 180 'count_left' 0 181
+'count_right' 0 182 'coupled_acoustic_elastic' 0 183
+'coupled_acoustic_poro' 0 184 'coupled_elastic_poro' 0 185 'cp' 0 186
+'cpi_kl' 0 187 'cpii_kl' 0 188 'cs' 0 189 'cs_kl' 0 190 'custom_real' 0
+191 'cutsnaps' 0 192 'd_x_store' 0 193 'd_z_store' 0 194 'deltat' 0 195
+'deltatover2' 0 196 'deltatsquareover2' 0 197 'density' 0 198 'dershape2d'
+0 199 'displ_elastic' 0 200 'displ_elastic_initial_rk' 0 201
+'displ_elastic_lddrk' 0 202 'displ_elastic_old' 0 203 'displs_poroelastic'
+0 204 'displs_poroelastic_initial_rk' 0 205 'displs_poroelastic_lddrk' 0
+206 'displs_poroelastic_old' 0 207 'displw_poroelastic' 0 208
+'displw_poroelastic_initial_rk' 0 209 'displw_poroelastic_lddrk' 0 210
+'dist_current' 0 211 'dist_tangential_detection_curve' 0 212 'distmin' 0
+213 'draw_sources_and_receivers' 0 214 'draw_water_in_blue' 0 215 'dt' 0
+216 'e1' 0 217 'e11' 0 218 'e11_force_rk' 0 219 'e11_initial_rk' 0 220
+'e11_lddrk' 0 221 'e13' 0 222 'e13_force_rk' 0 223 'e13_initial_rk' 0
+224 'e13_lddrk' 0 225 'e1_force_rk' 0 226 'e1_initial_rk' 0 227 'e1_lddrk'
+0 228 'elastic_simulation' 0 229 'epsilondev_s' 0 230 'epsilondev_w' 0
+231 'eta_f_read' 0 232 'eta_k' 0 233 'eta_kl' 0 234 'f0_attenuation' 0
+235 'f0_source' 0 236 'factor' 0 237 'factor_subsample_image' 0 238
+'flagrange_glj' 0 239 'fluid_poro_acoustic_iedge' 0 240
+'fluid_poro_acoustic_ispec' 0 241 'fluid_poro_poroelastic_iedge' 0 242
+'fluid_poro_poroelastic_ispec' 0 243 'fluid_solid_acoustic_iedge' 0 244
+'fluid_solid_acoustic_ispec' 0 245 'fluid_solid_elastic_iedge' 0 246
+'fluid_solid_elastic_ispec' 0 247 'force_normal_to_surface' 0 248
+'free_surface_file' 0 249 'freq0' 0 250 'gamma_receiver' 0 251
+'gamma_source' 0 252 'gammar_store_loc' 0 253 'gammarec' 0 254 'gammaval'
+0 255 'gammax' 0 256 'gammaz' 0 257 'gpu_mode' 0 258
+'gravitoacoustic_simulation' 0 259 'gravityext' 0 260 'hgammar' 0 261
+'hgammas' 0 262 'hgammas_store' 0 263 'hpgammar' 0 264 'hpgammas' 0 265
+'hprime_xx' 0 266 'hprime_zz' 0 267 'hprimebar_xx' 0 268
+'hprimebarwglj_xx' 0 269 'hprimewgll_xx' 0 270 'hprimewgll_zz' 0 271
+'hpxir' 0 272 'hpxis' 0 273 'hxir' 0 274 'hxis' 0 275 'hxis_store' 0 276
+'i_begin' 0 277 'i_end' 0 278 'i_stage' 0 279 'ib_bottom' 0 280
+'ib_bottom_acforcing' 0 281 'ib_left' 0 282 'ib_left_acforcing' 0 283
+'ib_right' 0 284 'ib_right_acforcing' 0 285 'ib_top' 0 286
+'ib_top_acforcing' 0 287 'ibegin_edge1' 0 288 'ibegin_edge1_acforcing' 0
+289 'ibegin_edge1_poro' 0 290 'ibegin_edge2' 0 291
+'ibegin_edge2_acforcing' 0 292 'ibegin_edge2_poro' 0 293 'ibegin_edge3'
+0 294 'ibegin_edge3_acforcing' 0 295 'ibegin_edge3_poro' 0 296
+'ibegin_edge4' 0 297 'ibegin_edge4_acforcing' 0 298 'ibegin_edge4_poro'
+0 299 'ibool' 0 300 'ibool_interfaces_acoustic' 0 301
+'ibool_interfaces_elastic' 0 302 'ibool_interfaces_ext_mesh' 0 303
+'ibool_interfaces_ext_mesh_init' 0 304 'ibool_interfaces_poroelastic' 0
+305 'icodemat' 0 306 'iend_edge1' 0 307 'iend_edge1_acforcing' 0 308
+'iend_edge1_poro' 0 309 'iend_edge2' 0 310 'iend_edge2_acforcing' 0 311
+'iend_edge2_poro' 0 312 'iend_edge3' 0 313 'iend_edge3_acforcing' 0 314
+'iend_edge3_poro' 0 315 'iend_edge4' 0 316 'iend_edge4_acforcing' 0 317
+'iend_edge4_poro' 0 318 'iglob_is_forced' 0 319 'iglob_source' 0 320
+'iglobzero' 0 321 'imagetype_jpeg' 0 322 'imagetype_postscript' 0 323
+'imagetype_wavefield_dumps' 0 324 'initialfield' 0 325
+'integer_mask_ibool' 0 326 'integrated_kinetic_energy_field' 0 327
+'integrated_potential_energy_field' 0 328 'interfacesfile' 0 329
+'interpol' 0 330 'inum_interfaces_acoustic' 0 331
+'inum_interfaces_elastic' 0 332 'inum_interfaces_poroelastic' 0 333
+'inv_tau_sigma_nu1' 0 334 'inv_tau_sigma_nu2' 0 335 'is_on_the_axis' 0
+336 'islice_selected_rec' 0 337 'islice_selected_source' 0 338
+'ispec_is_acoustic' 0 339 'ispec_is_anisotropic' 0 340 'ispec_is_elastic'
+0 341 'ispec_is_gravitoacoustic' 0 342 'ispec_is_inner' 0 343
+'ispec_is_pml' 0 344 'ispec_is_poroelastic' 0 345
+'ispec_of_axial_elements' 0 346 'ispec_selected_rec' 0 347
+'ispec_selected_rec_loc' 0 348 'ispec_selected_source' 0 349 'it' 0 350
+'it_of_this_subset' 0 351 'it_subset_end' 0 352 'iteration_on_subset' 0
+353 'ivalue' 0 354 'ivalue_inverse' 0 355 'j_begin' 0 356 'j_end' 0 357
+'jacobian' 0 358 'jvalue' 0 359 'jvalue_inverse' 0 360 'k_x_store' 0 361
+'k_z_store' 0 362 'kappa_ac_kl' 0 363 'kappa_f_read' 0 364 'kappa_fr_read'
+0 365 'kappa_k' 0 366 'kappa_kl' 0 367 'kappa_s_read' 0 368
+'kappal_ac_global' 0 369 'kappastore' 0 370
+'kinetic_effective_duration_field' 0 371 'kinetic_energy' 0 372 'kmato'
+0 373 'knods' 0 374 'left_bound' 0 375 'm_k' 0 376 'm_kl' 0 377
+'mask_ibool_pml' 0 378 'materials_file' 0 379
+'max_ibool_interfaces_size_ac' 0 380 'max_ibool_interfaces_size_el' 0
+381 'max_ibool_interfaces_size_po' 0 382 'max_interface_size' 0 383
+'max_kinetic_energy_field' 0 384 'max_length_network_name' 0 385
+'max_length_station_name' 0 386 'max_nibool_interfaces_ext_mesh' 0 387
+'max_npoints_interface' 0 388 'max_potential_energy_field' 0 389
+'max_string_len' 0 390 'max_total_energy_field' 0 391 'mesh_file' 0 392
+'meshvect' 0 393 'model' 0 394 'modelvect' 0 395 'mu_fr_read' 0 396 'mu_k'
+0 397 'mu_kl' 0 398 'mu_nu1' 0 399 'mu_nu2' 0 400 'mufr_k' 0 401 'mufr_kl'
+0 402 'mufrb_kl' 0 403 'mustore' 0 404 'mxx' 0 405 'mxz' 0 406
+'my_interfaces' 0 407 'my_neighbours' 0 408 'my_nelmnts_neighbours' 0
+409 'myrank' 0 410 'mzz' 0 411 'n1_tangential_detection_curve' 0 412
+'n_sls' 0 413 'n_tangential_detection_curve' 0 414 'nadj_rec_local' 0
+415 'name_of_source_file' 0 416 'nbmodels' 0 417 'nbregions' 0 418 'ndim'
+0 419 'nedges' 0 420 'nelem_acforcing' 0 421 'nelem_acoustic_surface' 0
+422 'nelem_on_the_axis' 0 423 'nelem_pml_thickness' 0 424 'nelemabs' 0
+425 'nelmnts' 0 426 'network_name' 0 427 'nglj' 0 428 'ngllx' 0 429
+'ngllz' 0 430 'nglob' 0 431 'nglob_acoustic' 0 432 'nglob_elastic' 0 433
+'nglob_gravitoacoustic' 0 434 'nglob_interface' 0 435 'nglob_poroelastic'
+0 436 'ngnod' 0 437 'nibool_interfaces_acoustic' 0 438
+'nibool_interfaces_elastic' 0 439 'nibool_interfaces_ext_mesh' 0 440
+'nibool_interfaces_poroelastic' 0 441 'ninterface' 0 442
+'ninterface_acoustic' 0 443 'ninterface_elastic' 0 444
+'ninterface_poroelastic' 0 445 'nnodes_tangential_curve' 0 446
+'nodes_coords_file' 0 447 'nodes_tangential_curve' 0 448
+'noise_tomography' 0 449 'npgeo' 0 450 'nproc' 0 451
+'nproc_read_from_database' 0 452 'nrec' 0 453 'nrec_line' 0 454
+'nreceiversets' 0 455 'nrecloc' 0 456 'nsources' 0 457 'nspec' 0 458
+'nspec_acoustic' 0 459 'nspec_acoustic_b' 0 460 'nspec_att' 0 461
+'nspec_bottom' 0 462 'nspec_bottom_acforcing' 0 463 'nspec_elastic' 0
+464 'nspec_elastic_b' 0 465 'nspec_gravitoacoustic' 0 466 'nspec_inner'
+0 467 'nspec_inner_acoustic' 0 468 'nspec_inner_elastic' 0 469
+'nspec_inner_poroelastic' 0 470 'nspec_left' 0 471 'nspec_left_acforcing'
+0 472 'nspec_outer' 0 473 'nspec_outer_acoustic' 0 474
+'nspec_outer_elastic' 0 475 'nspec_outer_poroelastic' 0 476 'nspec_pml'
+0 477 'nspec_poroelastic' 0 478 'nspec_poroelastic_b' 0 479 'nspec_right'
+0 480 'nspec_right_acforcing' 0 481 'nspec_top' 0 482
+'nspec_top_acforcing' 0 483 'nsqext' 0 484 'nstep' 0 485
+'nstep_between_output_images' 0 486 'nstep_between_output_info' 0 487
+'nsubset_iterations' 0 488 'nt_dump_attenuation' 0 489
+'ntstep_between_output_energy' 0 490 'num_fluid_poro_edges' 0 491
+'num_fluid_solid_edges' 0 492 'num_material' 0 493
+'num_phase_ispec_acoustic' 0 494 'num_phase_ispec_elastic' 0 495
+'num_phase_ispec_poroelastic' 0 496 'num_solid_poro_edges' 0 497 'numabs'
+0 498 'numacforcing' 0 499 'numat' 0 500 'number_of_interfaces' 0 501
+'number_of_layers' 0 502 'number_of_simultaneous_runs' 0 503 'nx' 0 504
+'nx_param' 0 505 'nxread' 0 506 'nz' 0 507 'nz_layer' 0 508 'nzread' 0
+509 'output_color_image' 0 510 'output_energy' 0 511 'output_grid_ascii'
+0 512 'output_grid_gnuplot' 0 513 'output_postscript_snapshot' 0 514
+'output_wavefield_dumps' 0 515 'over_critical_angle' 0 516 'p_sv' 0 517
+'partitioning_method' 0 518 'periodic_horiz_dist' 0 519 'permeability' 0
+520 'permxx_read' 0 521 'permxz_read' 0 522 'permzz_read' 0 523
+'phase_ispec_inner_acoustic' 0 524 'phase_ispec_inner_elastic' 0 525
+'phase_ispec_inner_poroelastic' 0 526 'phi_kl' 0 527 'phi_nu1' 0 528
+'phi_nu2' 0 529 'phi_read' 0 530 'phib_kl' 0 531
+'plot_lowerleft_corner_only' 0 532 'pml_boundary_conditions' 0 533
+'pml_interface_history_accel' 0 534 'pml_interface_history_displ' 0 535
+'pml_interface_history_potential' 0 536
+'pml_interface_history_potential_dot' 0 537
+'pml_interface_history_potential_dot_dot' 0 538
+'pml_interface_history_veloc' 0 539 'pml_interior_interface' 0 540
+'point_interface' 0 541 'pointsdisp' 0 542 'poroelastcoef' 0 543
+'poroelastic_simulation' 0 544 'porosity' 0 545 'potential_acoustic' 0
+546 'potential_acoustic_adj_coupling' 0 547 'potential_acoustic_init_rk'
+0 548 'potential_acoustic_lddrk' 0 549 'potential_acoustic_old' 0 550
+'potential_dot_acoustic' 0 551 'potential_dot_acoustic_init_rk' 0 552
+'potential_dot_acoustic_lddrk' 0 553 'potential_dot_acoustic_rk' 0 554
+'potential_dot_acoustic_temp' 0 555 'potential_dot_dot_acoustic' 0 556
+'potential_dot_dot_acoustic_rk' 0 557 'potential_dot_dot_gravito' 0 558
+'potential_dot_dot_gravitoacoustic' 0 559 'potential_dot_gravito' 0 560
+'potential_dot_gravitoacoustic' 0 561 'potential_effective_duration_field'
+0 562 'potential_energy' 0 563 'potential_gravito' 0 564
+'potential_gravitoacoustic' 0 565 'power_display_color' 0 566 'q0' 0 567
+'qkappa' 0 568 'qkappa_attenuation' 0 569 'qkappa_attenuationext' 0 570
+'qmu' 0 571 'qmu_attenuation' 0 572 'qmu_attenuationext' 0 573 'ratio_kl'
+0 574 'read_external_mesh' 0 575 'read_velocities_at_f0' 0 576
+'rec_normal_to_surface' 0 577 'rec_tangential_detection_curve' 0 578
+'recloc' 0 579 'record_at_surface_same_vertical' 0 580 'region_cpml' 0
+581 'request_send_recv_acoustic' 0 582 'request_send_recv_elastic' 0 583
+'request_send_recv_poro' 0 584 'rho_ac_kl' 0 585 'rho_f_read' 0 586
+'rho_k' 0 587 'rho_kl' 0 588 'rho_local' 0 589 'rho_s_read' 0 590 'rho_vp'
+0 591 'rho_vs' 0 592 'rhob_kl' 0 593 'rhobb_kl' 0 594 'rhoext' 0 595
+'rhof_k' 0 596 'rhof_kl' 0 597 'rhofb_kl' 0 598 'rhofbb_kl' 0 599
+'rhol_ac_global' 0 600 'rhop_ac_kl' 0 601 'rhop_kl' 0 602
+'rhorho_ac_hessian_final1' 0 603 'rhorho_ac_hessian_final2' 0 604
+'rhorho_el_hessian_final1' 0 605 'rhorho_el_hessian_final2' 0 606
+'rhostore' 0 607 'rhot_k' 0 608 'rhot_kl' 0 609 'right_bound' 0 610
+'rmass_inverse_acoustic' 0 611 'rmass_inverse_elastic' 0 612
+'rmass_inverse_gravito' 0 613 'rmass_inverse_gravitoacoustic' 0 614
+'rmass_s_inverse_poroelastic' 0 615 'rmass_w_inverse_poroelastic' 0 616
+'rmemory_acoustic_dux_dx' 0 617 'rmemory_acoustic_dux_dx_lddrk' 0 618
+'rmemory_acoustic_dux_dz' 0 619 'rmemory_acoustic_dux_dz_lddrk' 0 620
+'rmemory_displ_elastic' 0 621 'rmemory_displ_elastic_lddrk' 0 622
+'rmemory_dux_dx' 0 623 'rmemory_dux_dx_lddrk' 0 624 'rmemory_dux_dx_prime'
+0 625 'rmemory_dux_dz' 0 626 'rmemory_dux_dz_lddrk' 0 627
+'rmemory_dux_dz_prime' 0 628 'rmemory_duz_dx' 0 629 'rmemory_duz_dx_lddrk'
+0 630 'rmemory_duz_dx_prime' 0 631 'rmemory_duz_dz' 0 632
+'rmemory_duz_dz_lddrk' 0 633 'rmemory_duz_dz_prime' 0 634
+'rmemory_fsb_displ_elastic' 0 635 'rmemory_fsb_displ_elastic_lddrk' 0
+636 'rmemory_potential_acoustic' 0 637 'rmemory_potential_acoustic_lddrk'
+0 638 'rmemory_sfb_potential_ddot_acoustic' 0 639
+'rmemory_sfb_potential_ddot_acoustic_lddrk' 0 640 'rotate_pml_activate'
+0 641 'rotate_pml_angle' 0 642 'rx_viscous' 0 643 'rx_viscous_force_rk'
+0 644 'rx_viscous_initial_rk' 0 645 'rx_viscous_lddrk' 0 646 'rz_viscous'
+0 647 'rz_viscous_force_rk' 0 648 'rz_viscous_initial_rk' 0 649
+'rz_viscous_lddrk' 0 650 'save_ascii_kernels' 0 651
+'save_ascii_seismograms' 0 652 'save_binary_seismograms_double' 0 653
+'save_binary_seismograms_single' 0 654 'save_forward' 0 655 'save_model'
+0 656 'seismo_current' 0 657 'seismo_offset' 0 658 'seismotype' 0 659
+'setup_with_binary_database' 0 660 'shape2d' 0 661
+'shared_input_parameters' 0 662 'shared_parameters' 0 663
+'simulation_type' 0 664 'sinrot_irec' 0 665 'siscurl' 0 666 'sisux' 0
+667 'sisuz' 0 668 'sizemax_arrows' 0 669 'sm_k' 0 670 'sm_kl' 0 671
+'solid_poro_elastic_iedge' 0 672 'solid_poro_elastic_ispec' 0 673
+'solid_poro_poroelastic_iedge' 0 674 'solid_poro_poroelastic_ispec' 0
+675 'source_adjoint' 0 676 'source_courbe_eros' 0 677
+'source_time_function' 0 678 'source_type' 0 679 'sourcearrays' 0 680
+'spec_to_pml' 0 681 'specfem_par' 0 682 'st_xval' 0 683 'st_zval' 0 684
+'stacey_absorbing_conditions' 0 685 'stage_time_scheme' 0 686
+'station_name' 0 687 'su_format' 0 688 'subsamp_postscript' 0 689
+'subsamp_seismos' 0 690 't0' 0 691 't0x_bot' 0 692 't0x_left' 0 693
+'t0x_right' 0 694 't0z_bot' 0 695 't0z_left' 0 696 't0z_right' 0 697
+'tangential_detection_curve_file' 0 698 'theta_e' 0 699 'theta_s' 0 700
+'thetainv' 0 701 'this_ibool_is_a_periodic_edge' 0 702
+'time_function_type' 0 703 'time_offset' 0 704 'time_stepping_scheme' 0
+705 'timestamp_seconds_start' 0 706 'timeval' 0 707 'title' 0 708
+'tomo_material' 0 709 'tomography_file' 0 710 'tortuosity' 0 711
+'tortuosity_read' 0 712 'total_effective_duration_field' 0 713
+'total_integrated_energy_field' 0 714 'tshift_src' 0 715 'typeabs' 0 716
+'typeacforcing' 0 717 'undo_attenuation' 0 718 'us_letter' 0 719
+'use_binary_for_wavefield_dumps' 0 720 'use_constant_max_amplitude' 0
+721 'use_existing_stations' 0 722 'use_snapshot_number_in_filename' 0
+723 'use_trick_for_better_pressure' 0 724 'user_t0' 0 725 'v0x_bot' 0
+726 'v0x_left' 0 727 'v0x_right' 0 728 'v0z_bot' 0 729 'v0z_left' 0 730
+'v0z_right' 0 731 'veloc_elastic' 0 732 'veloc_elastic_initial_rk' 0 733
+'veloc_elastic_lddrk' 0 734 'veloc_elastic_lddrk_temp' 0 735
+'veloc_elastic_rk' 0 736 'velocs_poroelastic' 0 737
+'velocs_poroelastic_initial_rk' 0 738 'velocs_poroelastic_lddrk' 0 739
+'velocs_poroelastic_rk' 0 740 'velocw_poroelastic' 0 741
+'velocw_poroelastic_initial_rk' 0 742 'velocw_poroelastic_lddrk' 0 743
+'velocw_poroelastic_rk' 0 744 'viscox' 0 745 'viscoz' 0 746 'vp_local' 0
+747 'vpext' 0 748 'vs_local' 0 749 'vsext' 0 750 'which_pml_elem' 0 751
+'wxglj' 0 752 'wxgll' 0 753 'wzgll' 0 754 'x_final_receiver' 0 755
+'x_source' 0 756 'xdeb' 0 757 'xfin' 0 758 'xi_receiver' 0 759 'xi_source'
+0 760 'xiglj' 0 761 'xigll' 0 762 'xir_store_loc' 0 763 'xirec' 0 764
+'xix' 0 765 'xiz' 0 766 'xmax_param' 0 767 'xmin_param' 0 768
+'z_final_receiver' 0 769 'z_source' 0 770 'zdeb' 0 771 'zfin' 0 772
+'zigll' 0 773)

@@ -1,0 +1,185 @@
+
+ **********************************************
+ *** Specfem 2-D Mesher - MPI version       ***
+ **********************************************
+
+ Reading the parameter file...
+
+ Title of the simulation: california
+
+
+ Receiver lines:
+   Nb of line sets =            1
+
+ Materials:
+   Nb of solid, fluid or porous materials =            3
+
+ --------
+ Material #           1  isotropic
+ rho,cp,cs   =    2300.0000000000000        3600.0000000000000        1900.0000000000000     
+ Qkappa, Qmu =    10.000000000000000        10.000000000000000     
+ Material is solid
+ --------
+ Material #           2  isotropic
+ rho,cp,cs   =    2600.0000000000000        5100.0000000000000        2900.0000000000000     
+ Qkappa, Qmu =    10.000000000000000        10.000000000000000     
+ Material is solid
+ --------
+ Material #           3  isotropic
+ rho,cp,cs   =    1.3000000000000000        300.00000000000000        0.0000000000000000     
+ Qkappa, Qmu =    100.00000000000000        100.00000000000000     
+ Material is fluid
+ --------
+
+ Mesh from internal meshing:
+
+ Reading interface data from file: ./DATA/interfaces.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+ Reading            2  points for interface            1
+ Reading            2  points for interface            2
+
+ Total number of layers in z direction =            1
+ There are           40  spectral elements along Z in layer            1
+
+ Total number of spectral elements along X =           80
+ Total number of spectral elements along Z =           40
+
+ Regions:
+   Nb of regions in the mesh =            4
+
+ ------
+ Region            1
+ IX from            1  to           80
+ IZ from            1  to           40
+ Material #            1  isotropic
+ Material is solid
+ vp     =    3600.00000    
+ vs     =    1900.00000    
+ rho    =    2300.00000    
+ Poisson's ratio =   0.306951880    
+ QKappa =    10.0000000    
+ Qmu    =    10.0000000    
+ ------
+ Region            2
+ IX from            1  to           80
+ IZ from           16  to           25
+ Material #            2  isotropic
+ Material is solid
+ vp     =    5100.00000    
+ vs     =    2900.00000    
+ rho    =    2600.00000    
+ Poisson's ratio =   0.261079550    
+ QKappa =    10.0000000    
+ Qmu    =    10.0000000    
+ *************************************
+ Warning: Element range from this region is overwriting material numbers previously set on elements.
+          This indicates that your region range is overlapping the region for material            1
+          If your regions should be exclusive, please fix the region definitions in the Par_file!
+ *************************************
+ ------
+ Region            3
+ IX from           41  to           80
+ IZ from           26  to           30
+ Material #            2  isotropic
+ Material is solid
+ vp     =    5100.00000    
+ vs     =    2900.00000    
+ rho    =    2600.00000    
+ Poisson's ratio =   0.261079550    
+ QKappa =    10.0000000    
+ Qmu    =    10.0000000    
+ *************************************
+ Warning: Element range from this region is overwriting material numbers previously set on elements.
+          This indicates that your region range is overlapping the region for material            1
+          If your regions should be exclusive, please fix the region definitions in the Par_file!
+ *************************************
+ ------
+ Region            4
+ IX from           20  to           60
+ IZ from           15  to           15
+ Material #            3  isotropic
+ Material is fluid
+ vp     =    300.000000    
+ vs     =    0.00000000    
+ rho    =    1.29999995    
+ Poisson's ratio =   0.500000000    
+ QKappa =    100.000000    
+ Qmu    =    100.000000    
+ *************************************
+ Warning: Element range from this region is overwriting material numbers previously set on elements.
+          This indicates that your region range is overlapping the region for material            1
+          If your regions should be exclusive, please fix the region definitions in the Par_file!
+ *************************************
+ ------
+ Total number of spectral elements         =         3200
+
+
+ Parameter file successfully read 
+
+ The mesh contains         3200  elements
+
+ Control elements have            4  nodes
+
+ Source           1
+   Position xs, zs =    20.000000000000000        200.00000000000000     
+
+   Source type (1=force, 2=moment tensor, 3=Rayleigh wave, 4=plane incident P, 5=plane incident S):            1
+   Force source:
+   Angle of the source (deg) =    0.0000000000000000     
+   Multiplying factor  =    10000000000.000000     
+
+   Time function type (1=Ricker, 2=First derivative, 3=Gaussian, 4=Dirac, 5=Heaviside, 8=Read from file, 9=burst):           1
+   Ricker wavelet (second-derivative):
+   Frequency, delay =    100.00000000000000        0.0000000000000000     
+
+ Reading interface data from file: ./DATA/interfaces.dat
+
+ Mesh dimensions: 
+   Min and max value of X in the grid =    0.0000000000000000        400.00000000000000     
+   Min and max value of Z in the grid =    0.0000000000000000        200.00000000000000     
+
+
+ ************ Computing elements load ************
+ Number of elastic elements :        3159
+ Number of acoustic elements :          41
+ Number of viscoelastic elements :           0
+ Number of elastic PML elements :           0
+ Number of acoustic PML elements :           0
+ Number of viscoelastic PML elements :           0
+ *************************************************
+
+
+ Partitioning method: SCOTCH
+
+ nedges_coupled (acoustic/elastic)     =           84
+   after iteration            3 repartitioning of all coupled elements done
+ nedges_coupled (acoustic/poroelastic) =            0
+ nedges_coupled (poroelastic/elastic)  =            0
+
+ slice            0  has number of spectral elements =         803
+ slice            1  has number of spectral elements =         797
+ slice            2  has number of spectral elements =         800
+ slice            3  has number of spectral elements =         800
+
+ Position (x,z) of the source =    20.000000000000000        200.00000000000000     
+
+
+ writing the ./DATA/STATIONS file
+
+
+ There are           10  receivers
+
+ Target positions (x,z) of the           10  receivers
+
+ Receiver            1  =    20.000000000000000        200.00000000000000     
+ Receiver            2  =    60.000000000000000        200.00000000000000     
+ Receiver            3  =    100.00000000000000        200.00000000000000     
+ Receiver            4  =    140.00000000000000        200.00000000000000     
+ Receiver            5  =    180.00000000000000        200.00000000000000     
+ Receiver            6  =    220.00000000000000        200.00000000000000     
+ Receiver            7  =    260.00000000000000        200.00000000000000     
+ Receiver            8  =    300.00000000000000        200.00000000000000     
+ Receiver            9  =    340.00000000000000        200.00000000000000     
+ Receiver           10  =    380.00000000000000        200.00000000000000     
+
+ This will be a parallel simulation on            4  processor cores
+
